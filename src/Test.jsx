@@ -1,10 +1,10 @@
-import React from 'react'
-
 const TestPage = () => {
   return (
-    <div>TestPage</div>
-    <div>Made some changes</div>
-  )
-}
+    <>
+      <div>TestPage</div>
+      <div>Made some changes</div>
+    </>
+  );
+};
 
-export default TestPagee
+export default TestPagee;
