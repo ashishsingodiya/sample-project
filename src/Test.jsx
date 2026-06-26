@@ -1,4 +1,4 @@
-const TestPage = () => {
+const TestCard = () => {
   return (
     <div className="card">
       <div className="card-body">
@@ -8,5 +8,14 @@ const TestPage = () => {
     </div>
   );
 };
+
+const TestPage = () => {
+  return (
+    <div className="container">
+      <h1>Test Page</h1>
+      <TestCard />
+    </div>
+  );
+}
 
 export default TestPage;
