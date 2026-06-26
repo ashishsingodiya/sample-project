@@ -9,6 +9,20 @@ const TestCard = () => {
   );
 };
 
+const RichTestCard = () => {
+  return (
+    <div className="card">
+      <div className="card-header">
+        <h5 className="card-title">Rich Test Card</h5>
+      </div>
+      <div className="card-body">
+        <p className="card-text">This is a more elaborate test card with additional content.</p>
+        <button className="btn btn-primary">Click Me</button>
+      </div>
+    </div>
+  );
+};
+
 const TestPage = () => {
   return (
     <div className="container">
