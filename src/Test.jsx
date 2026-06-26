@@ -1,11 +1,11 @@
 const TestPage = () => {
   return (
-    <>
-    <h1>Test Page</h1>
-      <div>TestPage</div>
-      <div>Made some changes</div>
-      <div>Made some changes</div>
-    </>
+    <div className="card">
+      <div className="card-body">
+        <h5 className="card-title">Test Card</h5>
+        <p className="card-text">This is a simple test card.</p>
+      </div>
+    </div>
   );
 };
 
