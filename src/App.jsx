@@ -11,9 +11,6 @@ function App() {
       <section id="center">
         <div>
           <h1>Get started</h1>
-          <p>
-            Edit <code>src/App.jsx</code> and save to test <code>HMR</code>
-          </p>
         </div>
         <button
           type="button"
@@ -31,8 +28,8 @@ function App() {
           <svg className="icon" role="presentation" aria-hidden="true">
             <use href="/icons.svg#documentation-icon"></use>
           </svg>
-          <h2>Documentation</h2>
-          <p>Your questions, answered</p>
+          {/* <h2>Documentation</h2> */}
+          {/* <p>Your questions, answered</p> */}
           <ul>
             <li>
               <a href="https://vite.dev/" target="_blank">
