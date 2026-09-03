@@ -5,6 +5,8 @@ import heroImg from './assets/hero.png'
 import './App.css'
 
 function App() {
+  // initialize counter so the button works
+  const [count, setCount] = useState(0)
 
   return (
     <>
@@ -108,6 +110,26 @@ function App() {
       </section>
 
       <div className="ticks"></div>
+      <section id="testimonials" aria-label="Testimonials">
+        <h2>What people are saying</h2>
+        <div className="testimonial-card">
+          <img
+            className="testimonial-avatar"
+            src={heroImg}
+            alt="User avatar"
+            width="72"
+            height="72"
+          />
+          <div className="testimonial-content">
+            <p className="testimonial-text">
+              "This project made getting started so easy — excellent developer
+              experience and blazing fast reloads!"
+            </p>
+            <p className="testimonial-author">— Jamie Doe, Frontend Engineer</p>
+          </div>
+        </div>
+      </section>
+
       <section id="spacer"></section>
     </>
   )
