@@ -8,24 +8,7 @@ const INITIAL_TODOS = [
 ]
 
 function App() {
-  const [todos, setTodos] = useState(() => {
-    try {
-      const saved = localStorage.getItem('todos')
-      return saved ? JSON.parse(saved) : INITIAL_TODOS
-    } catch {
-      return INITIAL_TODOS
-    }
-  })
-  const [text, setText] = useState('')
-  const [filter, setFilter] = useState('all') // 'all' | 'active' | 'completed'
 
-  useEffect(() => {
-    try {
-      localStorage.setItem('todos', JSON.stringify(todos))
-    } catch (e) {
-      console.error('Failed to save todos to localStorage', e)
-    }
-  }, [todos])
 
   const handleAddTodo = (e) => {
     e.preventDefault()
